@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --primary-color: rgb(55, 141, 157);
+    --primary-color: #404040;
     --off-white:#F3F4F6;
 
 
@@ -10,6 +10,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 hr {
@@ -132,8 +134,8 @@ hr {
     font-size: 2rem;
     color: #6B7280;
 }
-
-.hero .hero-heading .headingg {
+.headingg {
+    text-align: center;
     color: var(--primary-color);
 }
 
@@ -186,4 +188,112 @@ hr {
 
 .size{
     font-size: 2.5rem;
+    text-align: left;
+}
+
+
+.foot-icon{
+    width: 25%;
+    padding: 15px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.foot-icon .foot-main{
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(109, 108, 108);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+   
+}
+@keyframes glow {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+}
+.foot-main i{
+    text-align: center;
+    font-size: 23px;
+    color: rgb(107, 107, 107);
+    transition: 1s;
+}
+.foot-main:nth-child(1){
+    
+    left: 2%;
+}
+.foot-main:nth-child(2){
+    
+    left: 15%;
+}
+.foot-main:nth-child(3){
+    
+    left: 3%;
+}
+.foot-main:nth-child(1):hover{
+    border: 3px solid rgb(100, 98, 98);
+    animation: glow 1.5s ease-out infinite alternate;
+}
+.foot-main:nth-child(1):hover i{
+    color: rgb(100, 98, 98);
+}
+.foot-main:nth-child(2):hover{
+    border: 3px solid rgb(100, 98, 98);
+    animation: glow 1.5s ease-out infinite alternate;
+}
+.foot-main:nth-child(2):hover i{
+    color: rgb(100, 98, 98);
+}
+.foot-main:nth-child(3):hover{
+    border: 3px solid rgb(100, 98, 98);
+    animation: glow 1.5s ease-out infinite alternate;
+}
+.foot-main:nth-child(3):hover i{
+    color: rgb(100, 98, 98);
+}
+.foot-main:nth-child(4):hover{
+    border: 3px solid rgb(100, 98, 98);
+    animation: glow 1.5s ease-out infinite alternate;
+}
+.foot-main:nth-child(4):hover i{
+    color: rgb(100, 98, 98);
+}
+.foot-main:nth-child(5):hover{
+    border: 3px solid rgb(100, 98, 98);
+    animation: glow 1.5s ease-out infinite alternate;
+}
+.foot-main:nth-child(5):hover i{
+    color: rgb(100, 98, 98);
+}
+.foot-title span{
+    color: rgb(73, 73, 73);
+}
+.foot-title a{
+    color: #337ab7;
+    text-decoration: none;
+}
+@media (max-width:1000px){
+    .foot-end{
+        width: 80%;
+    }
+    .foot-icon{
+        width: 80%;
+    }
+}
+@media (max-width:750px){
+    .foot-end{
+        width: 90%;
+    }
+    .foot-icon{
+        width: 100%;
+    }
 }
