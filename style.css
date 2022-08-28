@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 :root {
     --primary-color: #404040;
     --off-white:#F3F4F6;
@@ -38,11 +42,22 @@ hr {
 }
 
 .container-center {
-    max-width: 650px;
-    margin: auto;
-    padding-bottom: 2rem;
+    text-align: center;
+    margin: 0 auto;
 }
-
+li.section {
+    width: 33.33%;
+    padding: 0px 15px !important;
+    margin-bottom: 30px;
+}
+.projects-ul .section .container {
+    padding: 50px;
+    box-shadow: #000000 0px 5px 15px -10px;
+    height: 100%;
+}
+.projects-ul{
+    padding-bottom: 40px !important;
+}
 /* Links */
 
 .link{
@@ -85,7 +100,7 @@ a.link-secondary:before{
 
 .link-secondary {
     text-decoration: none;
-    background-color: var(--off-white);
+    background-color: #ffffff;
     border-radius: 0.5rem;
     color: black;
     padding: 0.5rem 1rem;
@@ -102,15 +117,15 @@ a.link-secondary:before{
 
 .list-item-inline {
     display: inline;
-    padding: 0rem 0.5rem;
+    margin: 0 20px;
 }
 
 /* Navigation */
 
 .navigation {
+    padding: 20px 0px 15px 20px;
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem 0rem 0rem;
     border-bottom-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -120,6 +135,8 @@ a.link-secondary:before{
 
 .navigation .link {
     color: white;
+    padding: 0 0px 5px 0;
+    letter-spacing: 1px;
 }
 
 
@@ -150,36 +167,62 @@ a.link-secondary:before{
     max-width: 350px;
     display: block;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .hero .hero-heading {
     text-align: center;
     font-size: 2rem;
     color: #6B7280;
+    text-transform: uppercase;
+    line-height: 45px;
+    letter-spacing: 1px;
+
 }
  .headingg {
     text-align: center;
     color: var(--primary-color);
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 19px;
 }
 
 /* Sections */
-
+.site-bttn a {
+    margin: 0 10px;
+}
 .section h1 {
     text-align: center;
-    padding: 2rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
-
+a{
+    text-decoration: none;
+}
+.nav-brand a{
+    color: #ffffff;
+}
+p {
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
 .ow {
     background-color: var(--off-white);
-    padding-bottom: 2rem;
-
+    padding-bottom: 70px;
 }
-
+.site-bttn {
+    margin: 30px 0 0 0;
+}
 .centers {
     min-width: 600px;
     margin: auto;
 }
-
+.projects-ul{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* footers */
 .footer{
@@ -210,10 +253,17 @@ a.link-secondary:before{
 }
 
 .size{
-    font-size: 2.5rem;
+    font-size: 30px;
+    line-height: 40px;
     text-align: left;
-}
+    margin: 0;
+    letter-spacing: 1px;
 
+}
+.nav-brand {
+    width: 50%;
+    float: left;
+}
 
 .foot-icon{
     width: 25%;
