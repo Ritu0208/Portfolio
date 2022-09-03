@@ -373,15 +373,28 @@ p {
         width: 100%;
     }
 }
+@media only screen and (max-width:1370px){
+    .link-secondary{
+        padding: 0.5rem 0.4rem;
+    }
+    li.section{
+        padding: 0px 8px !important;
+    }
+}
 @media only screen and (max-width:1170px){
     .projects-ul .section .container{
         padding: 30px;
     }
     }
+    @media only screen and (max-width:1170px){
+        li.section{
+            width: 50%;
+        }
+    }
     
     @media only screen and (max-width:850px){
     .projects-ul .section .container {
-        padding: 20px;
+        padding: 40px;
     }
     }
     @media only screen and (max-width:767px){
