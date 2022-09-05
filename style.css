@@ -420,4 +420,7 @@ p {
     .list-item-inline{
         margin: 0px 10px;
     }
-}
+    .projects-ul .section .container {
+        padding: 40px 2px;
+    }
+} 
